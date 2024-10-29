@@ -1,0 +1,33 @@
+body {
+    background-color: olive;
+   
+}
+h1 {color:tomato;}
+
+ h2 {color: tomato;}
+
+ h3 {color: olive;} 
+
+p {color: olive;}
+
+th, td {
+    border: 3px solid tomato;
+    border-radius: 20px;
+    background-color: rgb(238, 217, 224);
+    text-color: tomato;
+  }
+
+  article {
+    float: right;
+    padding: 20px;
+    width: 70%;
+    background-color: rgb(238, 217, 224);
+    height: 400px;
+  }
+  
+  nav {
+    float: left;
+    width: 24%;
+    height: 400px; 
+    background:orange;
+    padding: 20px;}

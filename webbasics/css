@@ -1,0 +1,9 @@
+body {
+    background-color: olive;
+    background-image: url("magritte.jpg");
+}
+h1 {color: palevioletred;
+    
+ }
+
+ h2 {orangered;}
