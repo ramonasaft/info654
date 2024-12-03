@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern Art in Motion</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+            <style>
+                .navigation {
+                    background-color: antiquewhite;
+                    border-bottom: solid lightcoral;
+                    overflow: hidden;
+                    color: lightcoral;
+                }
+                .navigation a {
+                    float: left;
+                    text-align: center;
+                    padding: 10px;
+                    background-color: antiquewhite;
+                    color: lightcoral;
+                }
+                .navigation a:hover {
+                    background-color: grey;
+                    color: black;
+                }
+                .navigation a.active {
+                    background-color: lightcoral;
+                    color: black;
+                }
+                .column {
+                    float: left;
+                    width: 45%;
+                    padding: 10px;
+                }
+                .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                }
+                @media screen and (max-width: 600px) {
+                    .column {
+                        width: 100%;
+                    }
+                    }
+                img {
+                    max-width: 70%;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            </style>
+        <div class="navigation">
+            <h1>Global Museum Gateway: Curated Digital Exhibitions for All</h1>
+            <a href=index.html>Home</a>
+            <a href=about.html>About</a>
+            <a href=exhibit4.html>Visuals of The Occult</a>
+            <a href=.html>Shtetl Visions</a>
+            <a href=.html>Cinema at War</a>
+            <a class="active" href=exhibit1.html>Modern Art in Motion</a>
+        </div>
+        <h1>Modern Art in Motion</h1>
+  
+        <div class="row">
+            <div class="column">
+                <h2>Futurism</h2>
+                <h3>The Futurist Manifesto</h3>
+                <p>The Futurist manifesto was a founding document for Futurist art. It was published by the poet F. T. 
+                    Marinetti in 1909. Futurism was focused on the future, new technology, and swift departure from all 
+                    things past. Being an Italian movement, they felt that Italy was particularly focused on the 
+                    classical past. The manifesto calls for a destruction of the past including museums, libraries, 
+                    and academies. Writing just before World War One, they also call for the glorification of war and 
+                    militarism. Their focus was on the future and technology and a destruction of all else.</p>
+                <h3>Notable Artists</h3>
+                <ul>
+                    <li><a href="https://www.moma.org/artists/3771">Filippo Tommaso Marinetti</a></li>
+                    <li><a href="https://www.guggenheim.org/artwork/artist/gino-severini">Gino Severini</a></li>
+                    <li><a href="https://www.moma.org/artists/987">Carlo Carrà</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Dada</h2>
+                <p>During the First World War, Dada was an art movement reacting to the horrors of that time. 
+                    Hugo Ball was a writer and the founder of Dada. The art of the movement is united by anti-war sentiments 
+                    and often used satire or nonsensical elements as critique of the war and a society which caused it. </p>
+                <h3>Notable Artists</h3>
+                <ul>
+                    <li><a href="https://www.guggenheim.org/artwork/artist/kurt-schwitters">Kurt Schwitters</a></li>
+                    <li><a href="https://www.guggenheim.org/artwork/artist/jean-arp">Jean Arp</a></li>
+                    <li><a href="https://www.guggenheim.org/artwork/artist/theo-van-doesburg">Theo Van Doesburg</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/485540/1005475/main-image" 
+                alt="Unique Forms of Continuity in Space">
+                <h3>Unique Forms of Continuity in Space</h3>
+                <h4>Umberto Boccioni, 1913, cast 1950</h4>
+                <p id="boccioni">Umberto Boccioni’s sculpture, <i>Unique Forms of Continuity in Space</i> is one of the most emblematic pieces of 
+                    Futurist sculpture. The sculpture depicts a man moving incredibly dynamically. The static sculpture has a 
+                    forward moving energy to it. Not only is the man sculpted, but there is a suggestion of the environment around 
+                    him in the air which he is displacing as he speeds along, particularly in the swirling shapes around his legs.</p>
+                <button onclick="toggleBoccioni()">Wall Text</button>
+            </div>
+
+            <div class="column">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Hoch-Cut_With_the_Kitchen_Knife.jpg" 
+                alt="Cut with the Kitchen Knife Dada Through the Last Weimar Beer Belly Cultural Epoch of Germany">
+                <h3>Cut with the Kitchen Knife Dada Through the Last Weimar Beer-Belly Cultural Epoch of Germany</h3>
+                <h4>Hannah Höch, 1919</h4>
+                <p id="hoch">Hannah Höch’s <i>Cut with the Kitchen Knife Dada Through the Last Weimar Beer-Belly Cultural Epoch in Germany</i> is a 
+                    photomontage piece commenting on the Dada movement and the contemporary politics of Germany at the time. 
+                    Photomontage and collage art was a popular medium amongst Dada artists as it is an appropriation of popular imagery 
+                    in the taking of newspaper content as well as suggesting the fragmentary nature of culture. For this piece particularly, 
+                    Höch uses the images of prominent figures, both fellow Dada artists as well as political figures. The composition is a bit 
+                    chaotic and it can be difficult to parse through to recognize individual elements, but the piece can be read in quadrants. 
+                    The top right shows the “anti-dada”, including various politicians at the time. The lower right is the Dada quadrant, 
+                    including many prominent Dada Artists who Höch knew such as Raoul Hausmann, George Grosz, and Niddy Impekoven as well as 
+                    various communist leaders. The left side shows a broader Dada movement. The top left includes Albert Einstein saying 
+                    “Dada is not an art trend” implying the movement is larger than a passing trend in art and that it is political and is 
+                    here to stay. The bottom left depicts crowds of people around the Communist Party leader Karl Lienbknecht, who is saying 
+                    “join Dada!” Höch also includes herself in the composition, at the bottom right on the corner of a map which shows countries 
+                    where women had the right to vote. Höch also points to the role of women in politics and art with her title, <i>Cut with the 
+                        Kitchen Knife</i>, which implies an element of the domestic labor that falls on women.</p>
+                    <button onclick="toggleHoch()">Wall Text</button>
+                </div>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Giacomo_Balla%2C_1912%2C_Dynamism_of_a_Dog_on_a_Leash%2C_oil_on_canvas%2C_89.8_x_109.8_cm%2C_Albright-Knox_Art_Gallery.jpg" 
+                alt="Dynamism of a Dog on a Leash">
+                <h3>Dynamism of a Dog on a Leash</h3>
+                <h4>Giacomo Balla, 1912</h4>
+                <p id="balla">Giacomo Balla, another notable Futurist painter focuses on a study of motion in his <i>Dynamism of a Dog on a Leash</i>. 
+                    The repetition and blur of leash and legs suggest the speed at which these figures are moving. The painting has a 
+                    frenetic energy which suggests the dynamism which the Futurists thought contemporary everyday life should have. The 
+                    painting is certainly influenced by early motion capture attempts including that by <a href="https://www.metmuseum.org/art/collection/search/265094">
+                        Etienne-Jules Marey</a>, who was able to capture motion in a similar style photographically by including multiple 
+                        exposures on one photographic plate. The effect of the repetition shows the various moments of a motion happening 
+                        synchronously which creates the sense of movement in a static image.</p>
+                    <button onclick="toggleBalla()">Wall Text</button>
+                </div>
+            <div class="column">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Marcel_Duchamp%2C_1917%2C_Fountain%2C_photograph_by_Alfred_Stieglitz.jpg" 
+                alt="Fountain">
+                <h3>Fountain</h3>
+                <h4>Marcel Duchamp, 1917 (photograph by Alfred Stieglitz)</h4>
+                <p id="duchamp">Marcel Duchamp’s <i>Fountain</i> is often met with skepticism both today and when he first created the piece. 
+                    This piece is one of his most notable “readymade” works, a kind of artwork where an artist selects a commercially 
+                    available object and names it as art. Duchamp pioneered “readymades” and in doing so, posed questions about what art 
+                    really is. The story of the fountain specifically is that Duchamp bought the porcelain urinal at a plumbing supply 
+                    store and signed it “R. Mutt”. He submitted Fountain to an unjuried art exhibition which caused much debate among 
+                    the Society of Independent Artists in New York. Ultimately the work was rejected from the show but was photographed 
+                    and featured in <i>The Blind Man</i>, a magazine published by Duchamp and his friends. The article featured a defense of 
+                    <i>Fountain</i>, stating that the selection and naming of the work placed it in a new context whether the artist 
+                    physically made the object or not.</p>
+                <button onclick="toggleDuchamp()">Wall Text</button>
+            </div>
+        </div>
+
+        <div>
+            <h2>Further Reading and Sources</h2>
+            <ul>
+                <li><a href="https://pressbooks.pub/art104/chapter/futurism-dada-new-objectivity/">
+                    Emily Casden; Dr. Rosalind McKever; Dr. Charles Cramer; Dr. Kim Grant; Dr. Stephanie Chadwick; Dr. Karen Barber; Shawn Roggenkamp; and Dr. Tom Folland. 
+                    History of Modern Art, Futurism, Dada, and New Objectivity.</a></li>
+                <li><a href="https://press.philamuseum.org/marcel-duchamp-and-the-fountain-scandal/">
+                    Philadelphia Museum of Art, Marcel Duchamp and the Fountain Scandal.</a></li>
+                <li><a href="https://smarthistory.org/hannah-hoch-cut-kitchen-knife-dada-weimar-beer-belly-germany/">
+                    Dr. Karen Barber, Hannah Höch, Cut with the Kitchen Knife Dada Through the Last Weimar Beer-Belly Cultural Epoch in Germany. SmartHistory.</a></li>
+                <li><a href="https://www.tate.org.uk/art/art-terms/d/dada">Tate Modern, Dada.</a></li>
+                <li><a href="https://www.moma.org/collection/terms/futurism#:~:text=An%20Italian%20movement%20in%20art,decisive%20break%20from%20the%20past.">
+                    Museum of Modern Art, Futurism.</a></li>
+                <li><a href="https://www.italianfuturism.org/manifestos/foundingmanifesto/">The Futurist Manifesto.</a></li>
+                <li><a href="https://www.metmuseum.org/art/collection/search/265094">Met Museum, Chronophotograph, Etienne-Jules Marey.</a></li>
+                <li><a href="https://www.metmuseum.org/art/collection/search/485540">Met Museum, Unique Forms of Continuity in Space, Umberto Boccioni.</a></li>
+                <li><a href="https://www.tate.org.uk/art/art-terms/f/futurism">Tate Modern, Futurism.</a></li>
+                <li><a href="https://buffaloakg.org/artworks/196416-dinamismo-di-un-cane-al-guinzaglio-dynamism-dog-leash">
+                    Buffalo AKG Art Museum, Dynamism of a Dog on a Leash, Giacomo Balla.</a></li>
+            </ul>
+        </div>
+
+        <script>
+            var boccioni = document.getElementById("boccioni");
+            boccioni.style.display = "none";
+            var hoch = document.getElementById("hoch");
+            hoch.style.display = "none";
+            var balla = document.getElementById("balla");
+            balla.style.display = "none";
+            var duchamp = document.getElementById("duchamp");
+            duchamp.style.display = "none";
+
+            function toggleBoccioni() {
+                if (boccioni.style.display === "none") {
+                    boccioni.style.display = "block";
+                } else {
+                    boccioni.style.display = "none";
+                }
+            }
+
+            function toggleHoch() {
+                if (hoch.style.display === "none") {
+                    hoch.style.display = "block";
+                } else {
+                    hoch.style.display = "none";
+                }
+            }
+
+            function toggleBalla() {
+                if (balla.style.display === "none") {
+                    balla.style.display = "block";
+                } else {
+                    balla.style.display = "none";
+                }
+            }
+
+            function toggleDuchamp() {
+                if (duchamp.style.display === "none") {
+                    duchamp.style.display = "block";
+                } else {
+                    duchamp.style.display = "none";
+                }
+            }
+        </script>
+
+        <footer>
+            <p>© Global Museum Gateway, 2024</p>
+        </footer>
+    </body>
+</html>
